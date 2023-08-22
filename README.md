@@ -44,7 +44,7 @@ Your directories should look like:
 
 ## Training and Evaluation
 
-By running the commands below, evaluation results and training losses will be logged into a .txt file in the output directory.
+By running the commands below, evaluation results and training losses will be logged into a .txt file in the output directory.<br>
 Or open run.ipynb for commands.
 
 * OIMNet++<br> 
