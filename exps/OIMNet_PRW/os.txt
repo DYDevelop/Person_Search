@@ -1,0 +1,107 @@
+[2023/08/11 00:16:38]: Creating model
+[2023/08/11 00:16:41]: Loading data
+[2023/08/11 00:16:43]: Creating output folder
+[2023/08/11 00:16:43]: Full config is saved to ./exps/prw_oimp/config.yaml
+[2023/08/11 00:16:43]: Epoch: [0]
+[2023/08/11 00:16:45]: Epoch: [0]  [   0/1140]  eta: 0:41:23  lr: 0.000006  loss: 11.0701 (11.0701)  loss_proposal_cls: 1.4968 (1.4968)  loss_proposal_reg: 0.5190 (0.5190)  loss_box_reid: 6.8896 (6.8896)  loss_rpn_reg: 1.4730 (1.4730)  loss_rpn_cls: 0.6917 (0.6917)  time: 2.1786  data: 0.9311  max mem: 7.00GB
+[2023/08/11 00:25:00]: Epoch: [0]  [1000/1140]  eta: 0:01:09  lr: 0.002637  loss: 4.8128 (6.9031)  loss_proposal_cls: 0.0474 (0.1015)  loss_proposal_reg: 0.8737 (0.5662)  loss_box_reid: 2.8039 (4.4967)  loss_rpn_reg: 0.4902 (1.1748)  loss_rpn_cls: 0.2764 (0.5638)  time: 0.4900  data: 0.0000  max mem: 7.27GB
+[2023/08/11 00:26:08]: Epoch: [1]
+[2023/08/11 00:26:09]: Epoch: [1]  [   0/1140]  eta: 0:31:19  lr: 0.003000  loss: 2.9443 (2.9443)  loss_proposal_cls: 0.0563 (0.0563)  loss_proposal_reg: 0.6351 (0.6351)  loss_box_reid: 1.9090 (1.9090)  loss_rpn_reg: 0.1534 (0.1534)  loss_rpn_cls: 0.1905 (0.1905)  time: 1.6486  data: 1.1510  max mem: 7.27GB
+[2023/08/11 00:34:30]: Epoch: [1]  [1000/1140]  eta: 0:01:10  lr: 0.003000  loss: 4.0508 (4.6110)  loss_proposal_cls: 0.0770 (0.0848)  loss_proposal_reg: 1.0009 (1.1506)  loss_box_reid: 2.8046 (2.9098)  loss_rpn_reg: 0.2419 (0.3665)  loss_rpn_cls: 0.0446 (0.0994)  time: 0.5036  data: 0.0000  max mem: 7.27GB
+[2023/08/11 00:35:41]: Epoch: [2]
+[2023/08/11 00:35:42]: Epoch: [2]  [   0/1140]  eta: 0:33:42  lr: 0.003000  loss: 4.1531 (4.1531)  loss_proposal_cls: 0.0833 (0.0833)  loss_proposal_reg: 1.2683 (1.2683)  loss_box_reid: 2.4669 (2.4669)  loss_rpn_reg: 0.2933 (0.2933)  loss_rpn_cls: 0.0413 (0.0413)  time: 1.7738  data: 1.2753  max mem: 7.27GB
+[2023/08/11 00:44:10]: Epoch: [2]  [1000/1140]  eta: 0:01:11  lr: 0.003000  loss: 3.5332 (3.5605)  loss_proposal_cls: 0.0656 (0.0652)  loss_proposal_reg: 1.0012 (1.0005)  loss_box_reid: 2.1204 (2.1791)  loss_rpn_reg: 0.2339 (0.2811)  loss_rpn_cls: 0.0269 (0.0345)  time: 0.5100  data: 0.0000  max mem: 7.27GB
+[2023/08/11 00:45:21]: Epoch: [3]
+[2023/08/11 00:45:23]: Epoch: [3]  [   0/1140]  eta: 0:27:47  lr: 0.003000  loss: 1.6893 (1.6893)  loss_proposal_cls: 0.0357 (0.0357)  loss_proposal_reg: 0.7074 (0.7074)  loss_box_reid: 0.6780 (0.6780)  loss_rpn_reg: 0.2442 (0.2442)  loss_rpn_cls: 0.0240 (0.0240)  time: 1.4627  data: 0.7977  max mem: 7.27GB
+[2023/08/11 00:53:56]: Epoch: [3]  [1000/1140]  eta: 0:01:11  lr: 0.003000  loss: 2.7808 (2.9635)  loss_proposal_cls: 0.0428 (0.0564)  loss_proposal_reg: 0.8265 (0.9107)  loss_box_reid: 1.4334 (1.7133)  loss_rpn_reg: 0.1847 (0.2580)  loss_rpn_cls: 0.0195 (0.0251)  time: 0.5155  data: 0.0000  max mem: 7.27GB
+[2023/08/11 00:55:07]: Epoch: [4]
+[2023/08/11 00:55:09]: Epoch: [4]  [   0/1140]  eta: 0:25:39  lr: 0.003000  loss: 2.0168 (2.0168)  loss_proposal_cls: 0.0566 (0.0566)  loss_proposal_reg: 0.7924 (0.7924)  loss_box_reid: 0.9379 (0.9379)  loss_rpn_reg: 0.2066 (0.2066)  loss_rpn_cls: 0.0234 (0.0234)  time: 1.3507  data: 0.6705  max mem: 7.27GB
+[2023/08/11 01:03:45]: Epoch: [4]  [1000/1140]  eta: 0:01:12  lr: 0.003000  loss: 2.1968 (2.6184)  loss_proposal_cls: 0.0420 (0.0505)  loss_proposal_reg: 0.7934 (0.8335)  loss_box_reid: 1.1582 (1.4719)  loss_rpn_reg: 0.1897 (0.2400)  loss_rpn_cls: 0.0204 (0.0226)  time: 0.5184  data: 0.0000  max mem: 7.27GB
+[2023/08/11 01:20:17]: all detection:
+[2023/08/11 01:20:17]:   recall = 94.65%
+[2023/08/11 01:20:17]:   ap = 89.33%
+[2023/08/11 01:24:23]: search ranking:
+[2023/08/11 01:24:23]:   mAP = 39.46%
+[2023/08/11 01:24:23]:   top- 1 = 78.85%
+[2023/08/11 01:24:23]:   top- 5 = 89.11%
+[2023/08/11 01:24:23]:   top-10 = 91.93%
+[2023/08/11 01:24:23]:  
+[2023/08/11 01:24:23]: Epoch: [5]
+[2023/08/11 01:24:25]: Epoch: [5]  [   0/1140]  eta: 0:34:09  lr: 0.003000  loss: 2.5448 (2.5448)  loss_proposal_cls: 0.0378 (0.0378)  loss_proposal_reg: 0.6716 (0.6716)  loss_box_reid: 1.6926 (1.6926)  loss_rpn_reg: 0.1239 (0.1239)  loss_rpn_cls: 0.0189 (0.0189)  time: 1.7982  data: 1.1207  max mem: 7.27GB
+[2023/08/11 01:33:00]: Epoch: [5]  [1000/1140]  eta: 0:01:12  lr: 0.003000  loss: 2.2038 (2.3797)  loss_proposal_cls: 0.0382 (0.0472)  loss_proposal_reg: 0.8765 (0.7959)  loss_box_reid: 1.1199 (1.2865)  loss_rpn_reg: 0.2309 (0.2292)  loss_rpn_cls: 0.0206 (0.0209)  time: 0.5178  data: 0.0000  max mem: 7.27GB
+[2023/08/11 01:34:12]: Epoch: [6]
+[2023/08/11 01:34:14]: Epoch: [6]  [   0/1140]  eta: 0:28:12  lr: 0.003000  loss: 2.3827 (2.3827)  loss_proposal_cls: 0.0293 (0.0293)  loss_proposal_reg: 0.6311 (0.6311)  loss_box_reid: 1.5924 (1.5924)  loss_rpn_reg: 0.1135 (0.1135)  loss_rpn_cls: 0.0164 (0.0164)  time: 1.4846  data: 0.9011  max mem: 7.27GB
+[2023/08/11 01:42:53]: Epoch: [6]  [1000/1140]  eta: 0:01:12  lr: 0.003000  loss: 1.9056 (2.2068)  loss_proposal_cls: 0.0453 (0.0468)  loss_proposal_reg: 0.7430 (0.7881)  loss_box_reid: 1.0411 (1.1323)  loss_rpn_reg: 0.2297 (0.2197)  loss_rpn_cls: 0.0213 (0.0200)  time: 0.5203  data: 0.0000  max mem: 7.27GB
+[2023/08/11 01:44:05]: Epoch: [7]
+[2023/08/11 01:44:07]: Epoch: [7]  [   0/1140]  eta: 0:23:56  lr: 0.003000  loss: 1.0357 (1.0357)  loss_proposal_cls: 0.0297 (0.0297)  loss_proposal_reg: 0.2965 (0.2965)  loss_box_reid: 0.5502 (0.5502)  loss_rpn_reg: 0.1467 (0.1467)  loss_rpn_cls: 0.0128 (0.0128)  time: 1.2598  data: 0.6757  max mem: 7.27GB
+[2023/08/11 01:52:48]: Epoch: [7]  [1000/1140]  eta: 0:01:13  lr: 0.003000  loss: 2.1063 (1.9618)  loss_proposal_cls: 0.0404 (0.0442)  loss_proposal_reg: 0.5472 (0.7396)  loss_box_reid: 1.0179 (0.9490)  loss_rpn_reg: 0.1409 (0.2099)  loss_rpn_cls: 0.0180 (0.0191)  time: 0.5178  data: 0.0000  max mem: 7.27GB
+[2023/08/11 01:54:00]: Epoch: [8]
+[2023/08/11 01:54:02]: Epoch: [8]  [   0/1140]  eta: 0:24:07  lr: 0.003000  loss: 1.4644 (1.4644)  loss_proposal_cls: 0.0486 (0.0486)  loss_proposal_reg: 0.8553 (0.8553)  loss_box_reid: 0.1585 (0.1585)  loss_rpn_reg: 0.3785 (0.3785)  loss_rpn_cls: 0.0235 (0.0235)  time: 1.2699  data: 0.6338  max mem: 7.27GB
+[2023/08/11 02:02:43]: Epoch: [8]  [1000/1140]  eta: 0:01:13  lr: 0.003000  loss: 1.4374 (1.8525)  loss_proposal_cls: 0.0334 (0.0423)  loss_proposal_reg: 0.5972 (0.7186)  loss_box_reid: 0.5545 (0.8659)  loss_rpn_reg: 0.1802 (0.2071)  loss_rpn_cls: 0.0149 (0.0185)  time: 0.5224  data: 0.0001  max mem: 7.27GB
+[2023/08/11 02:03:56]: Epoch: [9]
+[2023/08/11 02:03:57]: Epoch: [9]  [   0/1140]  eta: 0:23:28  lr: 0.003000  loss: 2.7942 (2.7942)  loss_proposal_cls: 0.0412 (0.0412)  loss_proposal_reg: 1.0550 (1.0550)  loss_box_reid: 1.2495 (1.2495)  loss_rpn_reg: 0.4289 (0.4289)  loss_rpn_cls: 0.0196 (0.0196)  time: 1.2359  data: 0.6513  max mem: 7.27GB
+[2023/08/11 02:12:39]: Epoch: [9]  [1000/1140]  eta: 0:01:13  lr: 0.003000  loss: 1.6283 (1.7099)  loss_proposal_cls: 0.0361 (0.0413)  loss_proposal_reg: 0.4499 (0.6870)  loss_box_reid: 0.7547 (0.7601)  loss_rpn_reg: 0.1418 (0.2035)  loss_rpn_cls: 0.0160 (0.0181)  time: 0.5179  data: 0.0000  max mem: 7.27GB
+[2023/08/11 02:28:47]: all detection:
+[2023/08/11 02:28:47]:   recall = 96.26%
+[2023/08/11 02:28:47]:   ap = 91.66%
+[2023/08/11 02:32:59]: search ranking:
+[2023/08/11 02:32:59]:   mAP = 38.08%
+[2023/08/11 02:32:59]:   top- 1 = 78.46%
+[2023/08/11 02:32:59]:   top- 5 = 88.53%
+[2023/08/11 02:32:59]:   top-10 = 91.98%
+[2023/08/11 02:32:59]:  
+[2023/08/11 02:32:59]: Epoch: [10]
+[2023/08/11 02:33:00]: Epoch: [10]  [   0/1140]  eta: 0:30:35  lr: 0.003000  loss: 0.6907 (0.6907)  loss_proposal_cls: 0.0363 (0.0363)  loss_proposal_reg: 0.4508 (0.4508)  loss_box_reid: 0.1195 (0.1195)  loss_rpn_reg: 0.0603 (0.0603)  loss_rpn_cls: 0.0237 (0.0237)  time: 1.6103  data: 0.8963  max mem: 7.27GB
+[2023/08/11 02:41:40]: Epoch: [10]  [1000/1140]  eta: 0:01:12  lr: 0.003000  loss: 1.6173 (1.6101)  loss_proposal_cls: 0.0400 (0.0400)  loss_proposal_reg: 0.5443 (0.6639)  loss_box_reid: 0.4993 (0.6907)  loss_rpn_reg: 0.1551 (0.1978)  loss_rpn_cls: 0.0126 (0.0178)  time: 0.5207  data: 0.0000  max mem: 7.27GB
+[2023/08/11 02:42:52]: Epoch: [11]
+[2023/08/11 02:42:54]: Epoch: [11]  [   0/1140]  eta: 0:31:42  lr: 0.003000  loss: 2.1661 (2.1661)  loss_proposal_cls: 0.0309 (0.0309)  loss_proposal_reg: 0.8958 (0.8958)  loss_box_reid: 0.7268 (0.7268)  loss_rpn_reg: 0.4783 (0.4783)  loss_rpn_cls: 0.0344 (0.0344)  time: 1.6691  data: 1.1310  max mem: 7.27GB
+[2023/08/11 02:51:35]: Epoch: [11]  [1000/1140]  eta: 0:01:13  lr: 0.003000  loss: 1.3568 (1.5065)  loss_proposal_cls: 0.0387 (0.0385)  loss_proposal_reg: 0.5707 (0.6454)  loss_box_reid: 0.5079 (0.6133)  loss_rpn_reg: 0.1369 (0.1919)  loss_rpn_cls: 0.0139 (0.0175)  time: 0.5249  data: 0.0000  max mem: 7.27GB
+[2023/08/11 02:52:48]: Epoch: [12]
+[2023/08/11 02:52:50]: Epoch: [12]  [   0/1140]  eta: 0:30:46  lr: 0.003000  loss: 1.4333 (1.4333)  loss_proposal_cls: 0.0440 (0.0440)  loss_proposal_reg: 0.7364 (0.7364)  loss_box_reid: 0.3934 (0.3934)  loss_rpn_reg: 0.2418 (0.2418)  loss_rpn_cls: 0.0177 (0.0177)  time: 1.6194  data: 1.0588  max mem: 7.27GB
+[2023/08/11 03:01:31]: Epoch: [12]  [1000/1140]  eta: 0:01:13  lr: 0.003000  loss: 1.3295 (1.4203)  loss_proposal_cls: 0.0389 (0.0379)  loss_proposal_reg: 0.7496 (0.6192)  loss_box_reid: 0.3722 (0.5568)  loss_rpn_reg: 0.1466 (0.1894)  loss_rpn_cls: 0.0115 (0.0170)  time: 0.5200  data: 0.0000  max mem: 7.27GB
+[2023/08/11 03:02:44]: Epoch: [13]
+[2023/08/11 03:02:45]: Epoch: [13]  [   0/1140]  eta: 0:24:53  lr: 0.003000  loss: 1.1796 (1.1796)  loss_proposal_cls: 0.0144 (0.0144)  loss_proposal_reg: 0.2447 (0.2447)  loss_box_reid: 0.7898 (0.7898)  loss_rpn_reg: 0.1118 (0.1118)  loss_rpn_cls: 0.0188 (0.0188)  time: 1.3103  data: 0.6639  max mem: 7.27GB
+[2023/08/11 03:11:27]: Epoch: [13]  [1000/1140]  eta: 0:01:13  lr: 0.003000  loss: 1.3183 (1.3491)  loss_proposal_cls: 0.0362 (0.0372)  loss_proposal_reg: 0.5894 (0.5954)  loss_box_reid: 0.2456 (0.5142)  loss_rpn_reg: 0.1698 (0.1859)  loss_rpn_cls: 0.0189 (0.0164)  time: 0.5209  data: 0.0000  max mem: 7.27GB
+[2023/08/11 03:12:39]: Epoch: [14]
+[2023/08/11 03:12:41]: Epoch: [14]  [   0/1140]  eta: 0:32:24  lr: 0.003000  loss: 0.9878 (0.9878)  loss_proposal_cls: 0.0235 (0.0235)  loss_proposal_reg: 0.3947 (0.3947)  loss_box_reid: 0.4123 (0.4123)  loss_rpn_reg: 0.1430 (0.1430)  loss_rpn_cls: 0.0143 (0.0143)  time: 1.7057  data: 1.1201  max mem: 7.27GB
+[2023/08/11 03:21:22]: Epoch: [14]  [1000/1140]  eta: 0:01:13  lr: 0.003000  loss: 1.2146 (1.2496)  loss_proposal_cls: 0.0326 (0.0366)  loss_proposal_reg: 0.6799 (0.5654)  loss_box_reid: 0.3396 (0.4491)  loss_rpn_reg: 0.1512 (0.1824)  loss_rpn_cls: 0.0137 (0.0162)  time: 0.5245  data: 0.0000  max mem: 7.27GB
+[2023/08/11 03:37:29]: all detection:
+[2023/08/11 03:37:29]:   recall = 95.74%
+[2023/08/11 03:37:29]:   ap = 92.21%
+[2023/08/11 03:41:34]: search ranking:
+[2023/08/11 03:41:34]:   mAP = 38.77%
+[2023/08/11 03:41:34]:   top- 1 = 78.12%
+[2023/08/11 03:41:34]:   top- 5 = 88.92%
+[2023/08/11 03:41:34]:   top-10 = 91.69%
+[2023/08/11 03:41:34]:  
+[2023/08/11 03:41:34]: Epoch: [15]
+[2023/08/11 03:41:35]: Epoch: [15]  [   0/1140]  eta: 0:29:20  lr: 0.003000  loss: 1.1809 (1.1809)  loss_proposal_cls: 0.0125 (0.0125)  loss_proposal_reg: 0.2682 (0.2682)  loss_box_reid: 0.7503 (0.7503)  loss_rpn_reg: 0.1385 (0.1385)  loss_rpn_cls: 0.0115 (0.0115)  time: 1.5444  data: 0.7981  max mem: 7.27GB
+[2023/08/11 03:50:15]: Epoch: [15]  [1000/1140]  eta: 0:01:12  lr: 0.003000  loss: 1.0883 (1.2204)  loss_proposal_cls: 0.0301 (0.0346)  loss_proposal_reg: 0.5017 (0.5500)  loss_box_reid: 0.3945 (0.4387)  loss_rpn_reg: 0.1314 (0.1811)  loss_rpn_cls: 0.0104 (0.0159)  time: 0.5184  data: 0.0000  max mem: 7.27GB
+[2023/08/11 03:51:27]: Epoch: [16]
+[2023/08/11 03:51:29]: Epoch: [16]  [   0/1140]  eta: 0:30:20  lr: 0.000300  loss: 1.3763 (1.3763)  loss_proposal_cls: 0.0201 (0.0201)  loss_proposal_reg: 0.3663 (0.3663)  loss_box_reid: 0.9165 (0.9165)  loss_rpn_reg: 0.0556 (0.0556)  loss_rpn_cls: 0.0178 (0.0178)  time: 1.5967  data: 1.0111  max mem: 7.27GB
+[2023/08/11 04:00:10]: Epoch: [16]  [1000/1140]  eta: 0:01:13  lr: 0.000300  loss: 0.7391 (0.8173)  loss_proposal_cls: 0.0275 (0.0321)  loss_proposal_reg: 0.3445 (0.4166)  loss_box_reid: 0.0827 (0.1981)  loss_rpn_reg: 0.0947 (0.1559)  loss_rpn_cls: 0.0116 (0.0146)  time: 0.5213  data: 0.0001  max mem: 7.27GB
+[2023/08/11 04:01:22]: Epoch: [17]
+[2023/08/11 04:01:24]: Epoch: [17]  [   0/1140]  eta: 0:31:58  lr: 0.000300  loss: 0.9180 (0.9180)  loss_proposal_cls: 0.0443 (0.0443)  loss_proposal_reg: 0.6124 (0.6124)  loss_box_reid: 0.1846 (0.1846)  loss_rpn_reg: 0.0693 (0.0693)  loss_rpn_cls: 0.0074 (0.0074)  time: 1.6833  data: 1.1124  max mem: 7.27GB
+[2023/08/11 04:10:04]: Epoch: [17]  [1000/1140]  eta: 0:01:13  lr: 0.000300  loss: 0.5667 (0.7112)  loss_proposal_cls: 0.0261 (0.0311)  loss_proposal_reg: 0.3100 (0.3773)  loss_box_reid: 0.0458 (0.1374)  loss_rpn_reg: 0.1022 (0.1513)  loss_rpn_cls: 0.0108 (0.0140)  time: 0.5224  data: 0.0001  max mem: 7.27GB
+[2023/08/11 04:11:16]: Epoch: [18]
+[2023/08/11 04:11:18]: Epoch: [18]  [   0/1140]  eta: 0:22:09  lr: 0.000300  loss: 0.8483 (0.8483)  loss_proposal_cls: 0.0493 (0.0493)  loss_proposal_reg: 0.4426 (0.4426)  loss_box_reid: 0.1167 (0.1167)  loss_rpn_reg: 0.2187 (0.2187)  loss_rpn_cls: 0.0211 (0.0211)  time: 1.1660  data: 0.5861  max mem: 7.27GB
+[2023/08/11 04:19:58]: Epoch: [18]  [1000/1140]  eta: 0:01:12  lr: 0.000300  loss: 0.6081 (0.6532)  loss_proposal_cls: 0.0214 (0.0299)  loss_proposal_reg: 0.2818 (0.3469)  loss_box_reid: 0.0541 (0.1191)  loss_rpn_reg: 0.1254 (0.1436)  loss_rpn_cls: 0.0095 (0.0137)  time: 0.5198  data: 0.0000  max mem: 7.27GB
+[2023/08/11 04:21:10]: Epoch: [19]
+[2023/08/11 04:21:12]: Epoch: [19]  [   0/1140]  eta: 0:26:07  lr: 0.000300  loss: 0.4725 (0.4725)  loss_proposal_cls: 0.0216 (0.0216)  loss_proposal_reg: 0.2695 (0.2695)  loss_box_reid: 0.0460 (0.0460)  loss_rpn_reg: 0.1238 (0.1238)  loss_rpn_cls: 0.0116 (0.0116)  time: 1.3748  data: 0.7706  max mem: 7.27GB
+[2023/08/11 04:29:53]: Epoch: [19]  [1000/1140]  eta: 0:01:13  lr: 0.000300  loss: 0.5869 (0.6274)  loss_proposal_cls: 0.0290 (0.0296)  loss_proposal_reg: 0.3276 (0.3299)  loss_box_reid: 0.0954 (0.1118)  loss_rpn_reg: 0.1320 (0.1428)  loss_rpn_cls: 0.0111 (0.0134)  time: 0.5179  data: 0.0000  max mem: 7.27GB
+[2023/08/11 04:45:59]: all detection:
+[2023/08/11 04:45:59]:   recall = 96.39%
+[2023/08/11 04:45:59]:   ap = 93.22%
+[2023/08/11 04:50:05]: search ranking:
+[2023/08/11 04:50:05]:   mAP = 42.59%
+[2023/08/11 04:50:05]:   top- 1 = 78.85%
+[2023/08/11 04:50:05]:   top- 5 = 90.37%
+[2023/08/11 04:50:05]:   top-10 = 93.00%
+[2023/08/11 04:50:05]: using GT boxes
+[2023/08/11 05:04:31]: search ranking:
+[2023/08/11 05:04:31]:   mAP = 44.64%
+[2023/08/11 05:04:31]:   top- 1 = 81.38%
+[2023/08/11 05:04:31]:   top- 5 = 91.01%
+[2023/08/11 05:04:31]:   top-10 = 93.29%
+[2023/08/11 05:04:31]:  
+[2023/08/11 05:04:31]: Total training time 4:47:48
