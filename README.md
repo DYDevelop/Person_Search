@@ -64,20 +64,6 @@ By running the commands below, evaluation results and training losses will be lo
 
 > We support training/evaluation using **single** GPU only. <br>
 > This is due to unsynchronized items across multiple GPUs in OIM loss (i.e., LUT and CQ) and ProtoNorm. <br>
-> (PRs are always welcomed!)
-
-## Citation
-```
-@inproceedings{lee2022oimnet++,
-  title={OIMNet++: Prototypical Normalization and Localization-Aware Learning for Person Search},
-  author={Lee, Sanghoon and Oh, Youngmin and Baek, Donghyeon and Lee, Junghyup and Ham, Bumsub},
-  booktitle={European Conference on Computer Vision},
-  pages={621--637},
-  year={2022},
-  organization={Springer}
-}
-```
-
 
 ## Credits
 Our person search implementation is heavily based on [Di Chen](https://di-chen.me/)'s [NAE](https://github.com/dichen-cd/NAE4PS) and [Zhengjia Li](https://github.com/serend1p1ty)'s [SeqNet](https://github.com/serend1p1ty/SeqNet) and [Sanghoon Lee](https://github.com/sanghoooon)'s [OIMNet++](https://github.com/sanghoooon/OIMNetPlus).<br>
