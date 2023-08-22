@@ -80,5 +80,5 @@ By running the commands below, evaluation results and training losses will be lo
 
 
 ## Credits
-Our person search implementation is heavily based on [Di Chen](https://di-chen.me/)'s [NAE](https://github.com/dichen-cd/NAE4PS) and [Zhengjia Li](https://github.com/serend1p1ty)'s [SeqNet](https://github.com/serend1p1ty/SeqNet). and  [Sanghoon Lee](https://github.com/sanghoooon)'s [OIMNet++](https://github.com/cvlab-yonsei/OIMNetPlus)<br>
+Our person search implementation is heavily based on [Di Chen](https://di-chen.me/)'s [NAE](https://github.com/dichen-cd/NAE4PS) and [Zhengjia Li](https://github.com/serend1p1ty)'s [SeqNet](https://github.com/serend1p1ty/SeqNet) and  [Sanghoon Lee](https://github.com/sanghoooon)'s [OIMNet++](https://github.com/cvlab-yonsei/OIMNetPlus).<br>
 ProtoNorm implementation is based on [ptrblck](https://github.com/ptrblck)'s manual BatchNorm implementation [here](https://github.com/ptrblck/pytorch_misc/blob/master/batch_norm_manual.py).
