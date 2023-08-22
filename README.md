@@ -1,90 +1,107 @@
-# Welcome to GitHub
+# PyTorch Implementation of OIMNet++ (ECCV 2022)
+This is an official PyTorch implementation of "OIMNet++: Prototypical Normalization and Localization-aware Learning for Person Search", ECCV 2022.
 
-Welcome to GitHub—where millions of developers work together on software. Ready to get started? Let’s learn how this all works by building and publishing your first GitHub Pages website!
+For more details, visit our [project site](https://cvlab.yonsei.ac.kr/projects/OIMNetPlus/) or see our [paper](http://arxiv.org/abs/2207.10320).<br>
+Our main contributions can be found in `models/custom_modules.py` and `losses/oim.py`.<br>
 
-## Repositories
+## Requirements
+* Python 3.8
+* PyTorch 1.7.1
+* GPU memory >= 22GB
 
-Right now, we’re in your first GitHub **repository**. A repository is like a folder or storage space for your project. Your project's repository contains all its files such as code, documentation, images, and more. It also tracks every change that you—or your collaborators—make to each file, so you can always go back to previous versions of your project if you make any mistakes.
+## Features
+* Re-implementation of vanilla [OIMNet](https://openaccess.thecvf.com/content_cvpr_2017/papers/Xiao_Joint_Detection_and_CVPR_2017_paper.pdf) in pure [PyTorch](https://pytorch.org/)
+* Using [automatic mixed precision](https://pytorch.org/docs/stable/notes/amp_examples.html) to train with larger batch size under limited GPU memory and accelerate training
 
-This repository contains three important files: The HTML code for your first website on GitHub, the CSS stylesheet that decorates your website with colors and fonts, and the **README** file. It also contains an image folder, with one image file.
+## Getting Started
+First, clone our git repository.
 
-## Describe your project
-
-You are currently viewing your project's **README** file. **_README_** files are like cover pages or elevator pitches for your project. They are written in plain text or [Markdown language](https://guides.github.com/features/mastering-markdown/), and usually include a paragraph describing the project, directions on how to use it, who authored it, and more.
-
-[Learn more about READMEs](https://help.github.com/en/articles/about-readmes)
-
-## Your first website
-
-**GitHub Pages** is a free and easy way to create a website using the code that lives in your GitHub repositories. You can use GitHub Pages to build a portfolio of your work, create a personal website, or share a fun project that you coded with the world. GitHub Pages is automatically enabled in this repository, but when you create new repositories in the future, the steps to launch a GitHub Pages website will be slightly different.
-
-[Learn more about GitHub Pages](https://pages.github.com/)
-
-## Rename this repository to publish your site
-
-We've already set-up a GitHub Pages website for you, based on your personal username. This repository is called `hello-world`, but you'll rename it to: `username.github.io`, to match your website's URL address. If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.
-
-Let's get started! To update this repository’s name, click the `Settings` tab on this page. This will take you to your repository’s settings page. 
-
-![repo-settings-image](https://user-images.githubusercontent.com/18093541/63130482-99e6ad80-bf88-11e9-99a1-d3cf1660b47e.png)
-
-Under the **Repository Name** heading, type: `username.github.io`, where username is your username on GitHub. Then click **Rename**—and that’s it. When you’re done, click your repository name or browser’s back button to return to this page.
-
-<img width="1039" alt="rename_screenshot" src="https://user-images.githubusercontent.com/18093541/63129466-956cc580-bf85-11e9-92d8-b028dd483fa5.png">
-
-Once you click **Rename**, your website will automatically be published at: https://your-username.github.io/. The HTML file—called `index.html`—is rendered as the home page and you'll be making changes to this file in the next step.
-
-Congratulations! You just launched your first GitHub Pages website. It's now live to share with the entire world
-
-## Making your first edit
-
-When you make any change to any file in your project, you’re making a **commit**. If you fix a typo, update a filename, or edit your code, you can add it to GitHub as a commit. Your commits represent your project’s entire history—and they’re all saved in your project’s repository.
-
-With each commit, you have the opportunity to write a **commit message**, a short, meaningful comment describing the change you’re making to a file. So you always know exactly what changed, no matter when you return to a commit.
-
-## Practice: Customize your first GitHub website by writing HTML code
-
-Want to edit the site you just published? Let’s practice commits by introducing yourself in your `index.html` file. Don’t worry about getting it right the first time—you can always build on your introduction later.
-
-Let’s start with this template:
-
+### Docker
+We highly recommend using our [Dockerfile](https://github.com/cvlab-yonsei/OIMNetPlus/blob/main/Dockerfile) to set up the environment.
 ```
-<p>Hello World! I’m [username]. This is my website!</p>
+# build docker image
+$ docker build -t oimnetplus:latest . 
+
+# execute docker container
+$ docker run --ipc=host -it -v <working_dir>:/workspace/work -v <dataset_dir>:/workspace/dataset -w /workspace/work oimnetplus:latest /bin/bash 
 ```
 
-To add your introduction, copy our template and click the edit pencil icon at the top right hand corner of the `index.html` file.
+### Prepare datasets
+Download [PRW](https://github.com/liangzheng06/PRW-baseline) and [CUHK-SYSU](https://github.com/ShuangLI59/person_search) datasets.<br>
+Modify the dataset directories below if necessary.
 
-<img width="997" alt="edit-this-file" src="https://user-images.githubusercontent.com/18093541/63131820-0794d880-bf8d-11e9-8b3d-c096355e9389.png">
+* PRW: L4 of [configs/prw.yaml](https://github.com/cvlab-yonsei/OIMNetPlus/blob/main/configs/prw.yaml)<br>
+* CUHK-SYSU: L3 of [configs/ssm.yaml](https://github.com/cvlab-yonsei/OIMNetPlus/blob/main/configs/ssm.yaml)<br>
 
-
-Delete this placeholder line:
-
+Your directories should look like:
 ```
-<p>Welcome to your first GitHub Pages website!</p>
+    <working_dir>
+    OIMNetPlus
+    ├── configs/
+    ├── datasets/
+    ├── engines/
+    ├── losses/
+    ├── models/
+    ├── utils/
+    ├── defaults.py
+    ├── Dockerfile
+    └── train.py
+    
+    <dataset_dir>
+    ├── CUHK-SYSU/
+    │   ├── annotation/
+    │   ├── Image/
+    │   └── ...
+    └── PRW-v16.04.20/
+        ├── annotations/
+        ├── frames/
+        ├── query_box/
+        └── ...
 ```
 
-Then, paste the template to line 15 and fill in the blanks.
+## Training and Evaluation
 
-<img width="1032" alt="edit-githuboctocat-index" src="https://user-images.githubusercontent.com/18093541/63132339-c3a2d300-bf8e-11e9-8222-59c2702f6c42.png">
+By running the commands below, evaluation results and training losses will be logged into a .txt file in the output directory.
+
+* OIMNet++<br> 
+    `$ python train.py --cfg configs/prw.yaml`<br>
+    `$ python train.py --cfg configs/ssm.yaml` 
+
+* OIMNet+++<br>
+    `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.AUGMENT True`<br>
+    `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.AUGMENT True`
+
+* OIMNet<br>
+    `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'`<br> 
+    `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'` 
+
+> We support training/evaluation using **single** GPU only. <br>
+> This is due to unsynchronized items across multiple GPUs in OIM loss (i.e., LUT and CQ) and ProtoNorm. <br>
+> (PRs are always welcomed!)
+
+## Pretrained Models
+
+We provide pretrained weights and the correponding configs below.<br>
+
+|           |   OIMNet++   |   OIMNet+++  |
+|-----------|:------------:|:------------:|
+| PRW       | [model](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/prw-loimeps0.1-normtypeprotonorm-augmentfalse.pth) <br> [config](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/prw-loimeps0.1-normtypeprotonorm-augmentfalse.yaml) | [model](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/prw-loimeps0.1-normtypeprotonorm-augmenttrue.pth) <br> [config](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/prw-loimeps0.1-normtypeprotonorm-augmenttrue.yaml) |
+| CUHK-SYSU | [model](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmentfalse.pth) <br> [config](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmentfalse.yaml) | [model](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmenttrue.pth) <br> [config](https://github.com/cvlab-yonsei/OIMNetPlus/releases/download/v0.1/ssm-loimeps0.1-normtypeprotonorm-augmenttrue.yaml) |
 
 
-When you’re done, scroll down to the `Commit changes` section near the bottom of the edit page. Add a short message explaining your change, like "Add my introduction", then click `Commit changes`.
+## Citation
+```
+@inproceedings{lee2022oimnet++,
+  title={OIMNet++: Prototypical Normalization and Localization-Aware Learning for Person Search},
+  author={Lee, Sanghoon and Oh, Youngmin and Baek, Donghyeon and Lee, Junghyup and Ham, Bumsub},
+  booktitle={European Conference on Computer Vision},
+  pages={621--637},
+  year={2022},
+  organization={Springer}
+}
+```
 
 
-<img width="1030" alt="add-my-username" src="https://user-images.githubusercontent.com/18093541/63131801-efbd5480-bf8c-11e9-9806-89273f027d16.png">
-
-Once you click `Commit changes`, your changes will automatically be published on your GitHub Pages website. Refresh the page to see your new changes live in action.
-
-:tada: You just made your first commit! :tada:
-
-## Extra Credit: Keep on building!
-
-Change the placeholder Octocat gif on your GitHub Pages website by [creating your own personal Octocat emoji](https://myoctocat.com/build-your-octocat/) or [choose a different Octocat gif from our logo library here](https://octodex.github.com/). Add that image to line 12 of your `index.html` file, in place of the `<img src=` link.
-
-Want to add even more code and fun styles to your GitHub Pages website? [Follow these instructions](https://github.com/github/personal-website) to build a fully-fledged static website.
-
-![octocat](./images/create-octocat.png)
-
-## Everything you need to know about GitHub
-
-Getting started is the hardest part. If there’s anything you’d like to know as you get started with GitHub, try searching [GitHub Help](https://help.github.com). Our documentation has tutorials on everything from changing your repository settings to configuring GitHub from your command line.
+## Credits
+Our person search implementation is heavily based on [Di Chen](https://di-chen.me/)'s [NAE](https://github.com/dichen-cd/NAE4PS) and [Zhengjia Li](https://github.com/serend1p1ty)'s [SeqNet](https://github.com/serend1p1ty/SeqNet).<br>
+ProtoNorm implementation is based on [ptrblck](https://github.com/ptrblck)'s manual BatchNorm implementation [here](https://github.com/ptrblck/pytorch_misc/blob/master/batch_norm_manual.py).
