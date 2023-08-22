@@ -58,7 +58,7 @@ By running the commands below, evaluation results and training losses will be lo
     `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'`<br> 
     `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'`
   
-* OIMNet<br>
+* NAE4PS<br>
     `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM' MODEL.ROI_HEAD.EMBD 'NAE'`<br> 
     `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM' MODEL.ROI_HEAD.EMBD 'NAE'`
 
@@ -80,5 +80,5 @@ By running the commands below, evaluation results and training losses will be lo
 
 
 ## Credits
-Our person search implementation is heavily based on [Di Chen](https://di-chen.me/)'s [NAE](https://github.com/dichen-cd/NAE4PS) and [Zhengjia Li](https://github.com/serend1p1ty)'s [SeqNet](https://github.com/serend1p1ty/SeqNet).<br>
+Our person search implementation is heavily based on [Di Chen](https://di-chen.me/)'s [NAE](https://github.com/dichen-cd/NAE4PS) and [Zhengjia Li](https://github.com/serend1p1ty)'s [SeqNet](https://github.com/serend1p1ty/SeqNet) and [Sanghoon Lee](https://github.com/sanghoooon)'s [OIMNet++](https://github.com/sanghoooon/OIMNetPlus).<br>
 ProtoNorm implementation is based on [ptrblck](https://github.com/ptrblck)'s manual BatchNorm implementation [here](https://github.com/ptrblck/pytorch_misc/blob/master/batch_norm_manual.py).
