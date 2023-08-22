@@ -58,7 +58,7 @@ By running the commands below, evaluation results and training losses will be lo
     `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'`<br> 
     `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM'`
 
-* OIMNet<br>
+* NAE4PS<br>
     `$ python train.py --cfg configs/prw.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM' MODEL.ROI_HEAD.EMBD 'NAE'`<br> 
     `$ python train.py --cfg configs/ssm.yaml MODEL.ROI_HEAD.NORM_TYPE 'none' MODEL.LOSS.TYPE 'OIM' MODEL.ROI_HEAD.EMBD 'NAE'`
 
