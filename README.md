@@ -65,6 +65,7 @@ Or open run.ipynb for commands.
 
 > We support training/evaluation using **single** GPU only. <br>
 > This is due to unsynchronized items across multiple GPUs in OIM loss (i.e., LUT and CQ) and ProtoNorm. <br>
+> OIMNet and NAE4PS results are in exps folder. <br>
 
 ## Credits
 Our person search implementation is heavily based on [Di Chen](https://di-chen.me/)'s [NAE](https://github.com/dichen-cd/NAE4PS) and [Zhengjia Li](https://github.com/serend1p1ty)'s [SeqNet](https://github.com/serend1p1ty/SeqNet) and [Sanghoon Lee](https://github.com/sanghoooon)'s [OIMNet++](https://github.com/sanghoooon/OIMNetPlus).<br>
